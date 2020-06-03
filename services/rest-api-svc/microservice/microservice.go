@@ -8,11 +8,11 @@ import (
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 
-	accountproto "github.com/begmaroman/go-micro-boilerplate/proto/account-svc"
-	restapisvc "github.com/begmaroman/go-micro-boilerplate/services/rest-api-svc"
-	"github.com/begmaroman/go-micro-boilerplate/services/rest-api-svc/account"
-	"github.com/begmaroman/go-micro-boilerplate/services/rest-api-svc/swaggergen/restapi/operations"
-	"github.com/begmaroman/go-micro-boilerplate/utils/rpc"
+	accountproto "github.com/supesharisuto/go-micro-boilerplate/proto/account-svc"
+	restapisvc "github.com/supesharisuto/go-micro-boilerplate/services/rest-api-svc"
+	"github.com/supesharisuto/go-micro-boilerplate/services/rest-api-svc/account"
+	"github.com/supesharisuto/go-micro-boilerplate/services/rest-api-svc/swaggergen/restapi/operations"
+	"github.com/supesharisuto/go-micro-boilerplate/utils/rpc"
 )
 
 // MicroService is the micro-service.

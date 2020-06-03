@@ -5,7 +5,7 @@ package store
 import (
 	"context"
 
-	accountproto "github.com/begmaroman/go-micro-boilerplate/proto/account-svc"
+	accountproto "github.com/supesharisuto/go-micro-boilerplate/proto/account-svc"
 )
 
 // Store represents the behavior of the store layer.

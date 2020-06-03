@@ -6,8 +6,8 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
 
-	accountproto "github.com/begmaroman/go-micro-boilerplate/proto/account-svc"
-	"github.com/begmaroman/go-micro-boilerplate/services/rest-api-svc/swaggergen/restapi/operations"
+	accountproto "github.com/supesharisuto/go-micro-boilerplate/proto/account-svc"
+	"github.com/supesharisuto/go-micro-boilerplate/services/rest-api-svc/swaggergen/restapi/operations"
 )
 
 // userRead is the handler of the user reading endpoint.

@@ -3,13 +3,13 @@ package account
 import (
 	"net/http"
 
-	"github.com/begmaroman/go-micro-boilerplate/services/rest-api-svc/swaggergen/models"
+	"github.com/supesharisuto/go-micro-boilerplate/services/rest-api-svc/swaggergen/models"
 
-	accountproto "github.com/begmaroman/go-micro-boilerplate/proto/account-svc"
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
+	accountproto "github.com/supesharisuto/go-micro-boilerplate/proto/account-svc"
 
-	"github.com/begmaroman/go-micro-boilerplate/services/rest-api-svc/swaggergen/restapi/operations"
+	"github.com/supesharisuto/go-micro-boilerplate/services/rest-api-svc/swaggergen/restapi/operations"
 )
 
 // usersList is the handler of the users listing endpoint.

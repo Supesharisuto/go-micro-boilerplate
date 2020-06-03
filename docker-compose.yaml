@@ -2,7 +2,7 @@ version: '3.5'
 
 services:
 
-  # We need the NATS really:
+  # We need the NATS :
   #  - as the discovery service;
   #  - as the message broker service;
   #  - as the transport method (optional);

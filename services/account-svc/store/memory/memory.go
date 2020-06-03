@@ -11,8 +11,8 @@ import (
 	"github.com/pborman/uuid"
 	"github.com/sirupsen/logrus"
 
-	accountproto "github.com/begmaroman/go-micro-boilerplate/proto/account-svc"
-	"github.com/begmaroman/go-micro-boilerplate/services/account-svc/store"
+	accountproto "github.com/supesharisuto/go-micro-boilerplate/proto/account-svc"
+	"github.com/supesharisuto/go-micro-boilerplate/services/account-svc/store"
 )
 
 // Options contains the options to create a memory store

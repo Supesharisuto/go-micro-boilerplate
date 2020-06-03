@@ -8,7 +8,7 @@ import (
 	_ "github.com/micro/go-plugins/transport/nats"
 	"github.com/sirupsen/logrus"
 
-	"github.com/begmaroman/go-micro-boilerplate/services/account-svc/microservice"
+	"github.com/supesharisuto/go-micro-boilerplate/services/account-svc/microservice"
 )
 
 // Version may be changed during build via --ldflags parameter

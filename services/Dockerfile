@@ -18,7 +18,7 @@ RUN curl -sOL "https://github.com/google/protobuf/releases/download/v${PROTOBUF_
   rm -f protoc-*.zip
 
 # Go to the root of the project.
-WORKDIR /go/src/github.com/begmaroman/go-micro-boilerplate/
+WORKDIR /go/src/github.com/supesharisuto/go-micro-boilerplate/
 
 # Switch on the Go modules. Go modules will be switched on by default from Go 1.13 onwards.
 ENV GO111MODULE=on

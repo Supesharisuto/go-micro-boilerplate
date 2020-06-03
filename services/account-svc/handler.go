@@ -9,11 +9,11 @@ import (
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 
-	accountproto "github.com/begmaroman/go-micro-boilerplate/proto/account-svc"
-	"github.com/begmaroman/go-micro-boilerplate/proto/health"
-	proto "github.com/begmaroman/go-micro-boilerplate/proto/status"
-	"github.com/begmaroman/go-micro-boilerplate/services/account-svc/domain"
-	"github.com/begmaroman/go-micro-boilerplate/utils/rpc"
+	accountproto "github.com/supesharisuto/go-micro-boilerplate/proto/account-svc"
+	"github.com/supesharisuto/go-micro-boilerplate/proto/health"
+	proto "github.com/supesharisuto/go-micro-boilerplate/proto/status"
+	"github.com/supesharisuto/go-micro-boilerplate/services/account-svc/domain"
+	"github.com/supesharisuto/go-micro-boilerplate/utils/rpc"
 )
 
 // To make sure Handler implements accountproto.AccountService interface.
@@ -186,7 +186,7 @@ func (h *Handler) Health(ctx context.Context, _ *empty.Empty, res *health.Health
 	return nil
 }
 
-// Ping implements accountproto.AccountServiceHandler and helath.Pinger interface.
+// Ping implements accountproto.AccountServiceHandler and health.Pinger interface.
 // This is needed to implement self-pinger functionality.
 func (h *Handler) Ping(ctx context.Context, _ *empty.Empty, _ *empty.Empty) error {
 	return nil

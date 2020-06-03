@@ -1,9 +1,9 @@
 swagger: '2.0'
 
 info:
-  description: Some description about the platform
+  description: APIs for managing Video assets on S3
   version: 0.0.1
-  title: Some title about platform
+  title: Video CMS
 
 basePath: /
 
@@ -25,39 +25,39 @@ paths:
         '200':
           description: health check successful
 
-  /user:
+  /video:
     post:
-      summary: 'Creates a new user.'
-      operationId: userCreate
+      summary: 'Creates a new video.'
+      operationId: videoCreate
       parameters:
       - name: seed
         in: body
-        description: 'The user input.'
+        description: 'The video input.'
         required: true
         schema:
-          $ref: '#/definitions/User'
+          $ref: '#/definitions/Video'
       responses:
         '200':
           description: OK
           schema:
-            $ref: '#/definitions/User'
+            $ref: '#/definitions/Video'
     get:
-      summary: 'Returns all users.'
-      operationId: usersList
+      summary: 'Returns all videos.'
+      operationId: videosList
       responses:
         '200':
           description: OK
           schema:
-            $ref: '#/definitions/UsersList'
+            $ref: '#/definitions/VideosList'
 
-  /user/{user_id}:
+  /video/{video_id}:
     get:
-      summary: 'Returns an existing user by its ID.'
-      operationId: userRead
+      summary: 'Returns an existing video by its ID.'
+      operationId: videoRead
       parameters:
-      - name: user_id
+      - name: video_id
         in: path
-        description: 'The ID of the user to be read.'
+        description: 'The ID of the video to be read.'
         required: true
         type: string
         format: uuid
@@ -65,14 +65,14 @@ paths:
         '200':
           description: OK
           schema:
-            $ref: '#/definitions/User'
+            $ref: '#/definitions/Video'
     delete:
-      summary: 'Delete an existing user by its ID.'
-      operationId: userDelete
+      summary: 'Delete an existing video by its ID.'
+      operationId: videoDelete
       parameters:
-      - name: user_id
+      - name: video_id
         in: path
-        description: 'The ID of the user to be deleted'
+        description: 'The ID of the video to be deleted'
         required: true
         type: string
         format: uuid
@@ -80,50 +80,50 @@ paths:
         '204':
           description: OK
     put:
-      summary: 'Update an existing user by its ID.'
-      operationId: userUpdate
+      summary: 'Update an existing video by its ID.'
+      operationId: videoUpdate
       parameters:
-      - name: user_id
+      - name: video_id
         in: path
-        description: 'The ID of the user to be updated.'
+        description: 'The ID of the video to be updated.'
         required: true
         type: string
         format: uuid
       - name: seed
         in: body
-        description: 'The updated user input.'
+        description: 'The updated video input.'
         required: true
         schema:
-          $ref: '#/definitions/User'
+          $ref: '#/definitions/Video'
       responses:
         '200':
           description: OK
           schema:
-            $ref: '#/definitions/User'
+            $ref: '#/definitions/Video'
 
 definitions:
 
-  UsersList:
-    description: 'The list of users.'
+  VideosList:
+    description: 'The list of videos.'
     type: array
     items:
-      $ref: '#/definitions/User'
+      $ref: '#/definitions/Video'
 
-  User:
-    description: 'User data.'
+  Video:
+    description: 'Video data.'
     type: object
     properties:
       id:
-        description: 'User identifier.'
+        description: 'Video identifier.'
         type: string
       name:
-        description: 'The name of the user.'
+        description: 'The name of the video.'
         type: string
       updated_at:
-        description: 'The date and time that the user was last updated.'
+        description: 'The date and time that the video was last updated.'
         type: string
         format: date-time
       created_at:
-        description: 'The date and time that the user was created.'
+        description: 'The date and time that the video was created.'
         type: string
         format: date-time

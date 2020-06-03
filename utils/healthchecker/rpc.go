@@ -6,7 +6,7 @@ import (
 
 	"github.com/golang/protobuf/ptypes/empty"
 
-	"github.com/begmaroman/go-micro-boilerplate/proto/health"
+	"github.com/supesharisuto/go-micro-boilerplate/proto/health"
 )
 
 // Wrap transforms a RPC healthcheck into a Check

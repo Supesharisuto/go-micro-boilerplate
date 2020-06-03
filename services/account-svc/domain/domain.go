@@ -5,7 +5,7 @@ package domain
 import (
 	"context"
 
-	accountproto "github.com/begmaroman/go-micro-boilerplate/proto/account-svc"
+	accountproto "github.com/supesharisuto/go-micro-boilerplate/proto/account-svc"
 )
 
 // Domain represents the behavior of the business/domain logic of the service.
